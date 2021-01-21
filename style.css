@@ -1,0 +1,168 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size:14px;
+} 
+
+body {
+	width:100%;
+	min-height:100vh;
+	background-color: rgb(243,243,243);
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.inst_wrapper{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	width: 60%;
+	height: 100vh;
+	
+}
+
+.insta_cel{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50%;	
+	flex-direction:column;
+}
+
+.insta_cel img{
+	height:50ren;
+}
+
+.mds{
+	display: flex;
+	align-items: center;
+	justify-content:space;
+	width: 40%;	
+	flex-direction:column;
+	
+	
+}
+
+
+.iiii{
+	
+  display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:column;
+	background-color: white;
+	width:100%;
+	padding:2rem 0;
+	border:1px solid lightgray;
+	min-height:100res;
+	
+}
+.group{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:column;
+	background-color: white;
+	width:100%;
+	padding:2rem 0;
+	border:1px solid lightgray;
+	
+}
+
+.group:nth-child(1){
+	min-height:19rem;
+	
+}
+.instlogo{
+	height: 3rem;
+}
+
+.fotoperfil{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:50%;
+	overflow:hidden;
+	
+}
+
+.fotoperfil img{
+	height: 6rem;
+	margin-top:1rem;
+}
+
+.insta-entrar{
+	background-color: #0095f6;
+	color:white;
+	padding:8px;
+	border-radius:4px;
+	margin-top:1rem;
+}
+.insta-sair{
+	color: #0095f6;
+	margin-top:1rem;
+	
+}
+
+.nao_soueu{
+	color: rgb(160,160,160);
+	
+}
+.blue{
+	color: #0095f6;
+}
+.getapp{
+	display:flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+	width:100%;
+	padding:1.3rem 0;
+}
+
+.dow{
+	display:flex;
+	width:100%;
+	justify-content:space-evenly;
+	align-items:center;
+	padding: 1rem;
+	
+}
+
+.appdow{
+	height:3rem;
+	width:10rem;
+	background-size:cover;
+}
+
+.appdow:nth-child(1){
+	background-image: url('https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png');
+}
+.appdow:nth-child(2){
+	background-image: url('https://clinicarx.com.br/wp-content/uploads/2020/04/appstore.png');
+}
+
+/*media queries, pra deixar o app redimensionado em qualquer dispo*/
+
+@media (max-width: 1024px){
+	.inst_wrapper{
+		width: 90%;
+	}
+}
+@media (max-width: 650px){
+	.inst_wrapper{
+		width:90%;
+	}
+	.insta_cel{
+		display:none;
+	}
+	.iiii{
+		width:100%;
+	}
+	
+}
